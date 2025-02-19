@@ -19,7 +19,7 @@ For this exercise, place all the required data types in the namespace `TrainSyst
 Each class will represent an item (Engine *(Exercise 1)*, RailCar *(Given)*, 
 enum RailCarType *(Given)* and Train). Certain characteristics of each item are set and cannot be altered. 
 You will need to read the specifications carefully to determine the access levels for item characteristics. 
-You will need to use the supplied unit tests for this exercise to demonstrate your objects can hold appropriate data.
+You will need to write unit tests for this exercise to demonstrate your objects can hold appropriate data.
 
 ### General Validation Rules
 
@@ -129,16 +129,16 @@ If the train is asked to detach the railcar serial number "GATX 225963", then th
  | Class item | Success/Fail | Specifications |
 | ---- | --------- | ------------------- |
 | Train  | Success | A train was successfully created with an engine.   |
-| Train  | Success | MaxGrossWeight calculates correctly. **The train must be setup with a minimum of 5 cars.**  |
-| Train  | Fail | There is no engine instance supplied. Use ArgumentNullExceeption().   |
+| Train  | Success | MaxGrossWeight calculates correctly.  |
+| Train  | Fail | There is no engine instance supplied. Use ArgumentNullException().   |
 | AddCar  | Success | Adds the first rail car to the train.   |
 | AddCar  | Success | Adds another rail car to the train after the first car. **The train must be setup with a minimum of 5 cars.**   |
-| AddCar  | Fail | There is no railcar instance supplied. Use ArgumentNullExceeption(). Message must contain `RailCar required`   |
-| AddCar  | Fail | Adding a rail car where the serial number already exists on the train. **The train must be setup with a minimum of 5 cars.** Use ArgumentExceeption(). Include serial number.|  
-| AddCar  | Fail | Adding a rail car exceeds the MaxGrossWeight limits. **The train must be setup with a minimum of 5 cars.** Use ArgumentExceeption(). Include the maximum gross weight allow and the expected gross weight if the car was added |
-| DetachCar  | Success | Detach a car from the train. **The train must be setup with a minimum of 5 cars.** Remaining cars are in the correct order and returns the detailed rail car.  | 
-| DetachCar  | Fail | There is no railcar serial number supplied. **The train must be setup with a minimum of 5 cars.** Use ArgumentNullExceeption(). Message must contain `SerialNumber required`| 
-| DetachCar  | Fail | Serial Number of car not found on train. **The train must be setup with a minimum of 5 cars.** Use ArgumentExceeption(). Message must contain serial number. | 
+| AddCar  | Fail | There is no railcar instance supplied. Use ArgumentNullException(). Message must contain `RailCar required`   |
+| AddCar  | Fail | Adding a rail car where the serial number already exists on the train. **The train must be setup with a minimum of 5 cars.** Use ArgumentException(). Include serial number.|  
+| AddCar  | Fail | Adding a rail car exceeds the MaxGrossWeight limits. **The train must be setup with a minimum of 5 cars.** Use ArgumentException(). Include the maximum gross weight allow and the expected gross weight if the car was added |
+| DetachCar  | Success | Detach a car from the train. **The train must be setup with a minimum of 5 cars.** Remaining cars are in the correct order and returns the detached rail car.  | 
+| DetachCar  | Fail | There is no railcar serial number supplied. **The train must be setup with a minimum of 5 cars.** Use ArgumentNullException(). Message must contain `SerialNumber required`| 
+| DetachCar  | Fail | Serial Number of car not found on train. **The train must be setup with a minimum of 5 cars.** Use ArgumentException(). Message must contain serial number. | 
 
 ## Submission
 
