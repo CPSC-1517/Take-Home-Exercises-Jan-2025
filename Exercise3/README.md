@@ -72,7 +72,7 @@ Add a "Weight Report" page to display the recording of railcar scale weights fro
 
 ### Add `WeightScale` Page
 
-Add a "Weight Scale" page with to allow the recording of railcar scale weights to a CSV file (append mode). A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of controls within the mockup for the same data. You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and serial number combined make up the railcar serial number.
+Add a "Weight Scale" page to allow the recording of railcar scale weights to a CSV file (append mode). A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of controls within the mockup for the same data. You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and serial number combined make up the railcar serial number.
 
 #### Validation
 
