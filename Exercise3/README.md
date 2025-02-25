@@ -65,7 +65,7 @@ A zip file has been supplied for you. This file contains the Model folder. Unpac
 
 ### Add `WeightReport` Page
 
-Add a "Weight Report" page to display the recording of railcar scale weights from a CSV file. A mockup image of the required report is supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your RailCarLoad class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format.
+Add a "Weight Report" page to display the recording of railcar scale weights from a CSV file. A mockup image of the required report is supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your CarWeight class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format.
 
 ![WeightReport](./ReportWebPage.png)
 
