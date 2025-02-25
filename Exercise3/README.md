@@ -14,7 +14,7 @@ This exercise will allow you to demonstrate:
 - create a web application with several web pages
 - implement a data entry form with input validation
 - implement a tabular report from a collection of data
-- use a CSV file (append data, read and display)
+- use a CSV file (append data (write), read and display)
   
 ## Overview
 
@@ -30,7 +30,7 @@ Modify the home page to include the following.
 
 - The title line for the site (**Train Watch**)
 - A simple logo for the site
-- One to two paragraph welcome and summary description of the site
+- One to two paragraphs of welcome and summary description for the site
 
 ### Update the `MainLayout`
 
@@ -41,7 +41,7 @@ Put your name and section identifier in the `<footer>` element for the copyright
 Also ensure that the menu navigation has the following items.
 
 - A link to the home page (`Home`) with the text "Home"
-- A link to the weight scale page (`/WeightScale`) with an appropriate text
+- A link to the data entry weight scale page (`/WeightScale`) with an appropriate text
 - A link to the weight report page (`/WeightReport`) with an appropriate text
 - A link to the privacy page (`/Privacy`) with the text "Privacy"
   - include any Credit and attributions for images that are used and you did not create
@@ -49,7 +49,7 @@ Also ensure that the menu navigation has the following items.
   
 ### Add `Data` folder and file
 
-Add a folder called `Data` to your web application project. You will place your text (csv) files into this folder. Create 3 text files within this folder. For testing, at minimum, add the first three lines from the sample report below.
+Add a folder called `Data` to your web application project. You will place your text (csv) files into this folder. Create 3 text files within this folder. For testing, at minimum, add at least the first three lines from the sample report below.
 
 - a file consisting of only good data
 - a file consisting of both good and bad data
@@ -66,14 +66,14 @@ A zip file has been supplied for you. This file contains the Model folder. Unpac
 
 ### Add `WeightReport` Page
 
-Add a "Weight Report" page to display the records of railcar scale weights from a CSV file. A mockup layout image of the required report has been supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your CarWeight class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format. Your instructor may include any addition layout requirement.
+Add a "Weight Report" page to display the records of railcar scale weights from a CSV (text) file. A mockup layout image of the required report has been supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your CarWeight class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format. Your instructor may include any addition layout requirement.
 
 ![WeightReport](./ReportWebPage.png)
 
 
 ### Add `WeightScale` Page
 
-Add a "Weight Scale" page to allow the recording of railcar scale weights to a text (CSV) file in append mode. A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of controls within the mockup for the same data. You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and serial number combined make up the railcar serial number.
+Add a "Weight Scale" data entry page to allow the recording of railcar scale weights to a text (CSV) file in append mode. A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of basic **HTML** controls within the mockup for the same data. **Do not use EditForm or EditForm controls (except InputRadioGroup and InputRadio)** You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and car id combined make up the railcar serial number.
 
 #### Validation
 
@@ -84,7 +84,7 @@ Add a "Weight Scale" page to allow the recording of railcar scale weights to a t
 
 #### Submit buttons
 
-- **Record** will validate the incoming data and save to the CSV file if correct.
+- **Record** will validate the incoming data and save to the CSV (text) file if correct.
 - **Clear** will reset the form to empty input state. (Use a warning dialogue to get a user okay )
 - **Go to Report** will transfer the user to the Weight Report page. (Use a warning dialogue to get a user okay )
 
