@@ -10,6 +10,7 @@
 This exercise will allow you to demonstrate:
 
 - your ability to read and interpret a class diagram
+- to read and understand the code of a given class
 - create a web application with several web pages
 - implement a data entry form with input validation
 - implement a tabular report from a collection of data
@@ -19,7 +20,7 @@ This exercise will allow you to demonstrate:
 
 You are to create a new ASP.NET 8 Core Blazor Web Application for this exercise. Create the application using Visual Studio 2022 .Net Core 8. Name your wep app project **`TrainWebApp`**. Name your solution **`TrainWatchSolution`**. Place your work in your exercise repository.
 
-To ensure that your web application works, build and run your project.
+To ensure that your web application works, build and run your project as soon as it is created.
 
 The styling for your application is up to you. The template for the `web app` project has Bootstrap built in, but you can use any website styling you choose.
 
@@ -27,7 +28,7 @@ The styling for your application is up to you. The template for the `web app` pr
 
 Modify the home page to include the following.
 
-- The title of the site (**Train Watch**)
+- The title line for the site (**Train Watch**)
 - A simple logo for the site
 - One to two paragraph welcome and summary description of the site
 
@@ -44,11 +45,11 @@ Also ensure that the menu navigation has the following items.
 - A link to the weight report page (`/WeightReport`) with an appropriate text
 - A link to the privacy page (`/Privacy`) with the text "Privacy"
   - include any Credit and attributions for images that are used and you did not create
-- Create your own or find an image that you wish to use as a brand image for your menu. (If you are using the supplied bootstrap menu, change the *brand* from a text string to a thumbnail imagine 40 X 40 pixels.) If you are using an image that someone else created, make sure that you give credit to the individual on your Privacy page.
+- Create your own or find an image that you wish to use as a brand image for your menu. (If you are using the supplied bootstrap menu, alter the *brand* text string to include a thumbnail imagine 40 X 40 pixels.) If you are using an image that someone else created, make sure that you give credit to the individual on your Privacy page.
   
 ### Add `Data` folder and file
 
-Add a folder called `Data` to your web application project. You will place your CSV files into this folder. Create 3 text files within this folder. For testing, add the first three lines from the sample report below.
+Add a folder called `Data` to your web application project. You will place your text (csv) files into this folder. Create 3 text files within this folder. For testing, at minimum, add the first three lines from the sample report below.
 
 - a file consisting of only good data
 - a file consisting of both good and bad data
@@ -56,23 +57,23 @@ Add a folder called `Data` to your web application project. You will place your 
 
 ### Add `Model` folder and class definition
 
-A zip file has been supplied for you. This file contains the Model folder. Unpack the file and place the Model folder into your web application project. Below are the class diagrams of the Model files.
+A zip file has been supplied for you. This file contains the Model folder. Unpack the file and place the Model folder into your web application project (same level as the Data folder). Below are the class diagrams of the Model files.
 
 ![CarWeight Diagram](./CarWeight.png)
 ![RailCarTypes](./RailCarType.png)
 
-> ### `Pages you create should have a feed back and error message area`
+> ## `Pages you create should have a feed back and error message area`
 
 ### Add `WeightReport` Page
 
-Add a "Weight Report" page to display the recording of railcar scale weights from a CSV file. A mockup image of the required report is supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your CarWeight class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format.
+Add a "Weight Report" page to display the records of railcar scale weights from a CSV file. A mockup layout image of the required report has been supplied. You will supply an appropriate tilte for the page. You will read the file and create a collection using your CarWeight class. Your page will display this collection. Display a message if the collection is empty. Your page must process the entire data file and report any record that does not meet the expected input format. Review the CarWeight class Parse method for expected data record format. Your instructor may include any addition layout requirement.
 
 ![WeightReport](./ReportWebPage.png)
 
 
 ### Add `WeightScale` Page
 
-Add a "Weight Scale" page to allow the recording of railcar scale weights to a CSV file (append mode). A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of controls within the mockup for the same data. You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and serial number combined make up the railcar serial number.
+Add a "Weight Scale" page to allow the recording of railcar scale weights to a text (CSV) file in append mode. A mockup image of the required page is supplied. Your page does not need to have the same layout **but** must use the variety of controls within the mockup for the same data. You will validate the incoming data and display any fields in error. Use the CarWeight class as a guide for validation. Individual unique error messages will be used to indicate the error. The owner selection and serial number combined make up the railcar serial number.
 
 #### Validation
 
@@ -85,9 +86,9 @@ Add a "Weight Scale" page to allow the recording of railcar scale weights to a C
 
 - **Record** will validate the incoming data and save to the CSV file if correct.
 - **Clear** will reset the form to empty input state. (Use a warning dialogue to get a user okay )
-- **Go to Report** will transfer the user to the Weigth Report page. (Use a warning dialogue to get a user okay )
+- **Go to Report** will transfer the user to the Weight Report page. (Use a warning dialogue to get a user okay )
 
-Use the class called `CarWeight` to hold the incoming data. The class diagram has been supplied (above). The ToString() will be used to create the record for the CSV file.
+Use the class called `CarWeight` to hold the incoming data. The class diagram has been supplied (above). The ToString() can be used to create the record for the CSV file.
 
 ----
 
