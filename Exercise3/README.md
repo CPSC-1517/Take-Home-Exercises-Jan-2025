@@ -18,9 +18,9 @@ This exercise will allow you to demonstrate:
   
 ## Overview
 
-You are to create a new ASP.NET 8 Core Blazor Web Application for this exercise. Create the application using Visual Studio 2022 .Net Core 8. Name your wep app project **`TrainWebApp`**. Name your solution **`TrainWatchSolution`**. Place your work in your exercise repository.
+You are to create a new ASP.NET 8 Core Blazor Web Application for this exercise. Create the application using Visual Studio 2022 .Net Core 8. Name your wep app project **`TrainWebApp`**. Name your solution **`TrainWatchSolution`**. Please turn off the HTTPS checkbox when creating your web application. Place your work in your exercise repository.
 
-To ensure that your web application works, build and run your project as soon as it is created.
+To ensure that your web application works, build and run your project as soon as it is created. 
 
 The styling for your application is up to you. The template for the `web app` project has Bootstrap built in, but you can use any website styling you choose.
 
