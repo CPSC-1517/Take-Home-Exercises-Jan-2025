@@ -43,7 +43,7 @@ Also ensure that the menu navigation has the following items.
 - A link to the weight scale page (`/WeightScale`) with an appropriate text
 - A link to the weight report page (`/WeightReport`) with an appropriate text
 - A link to the privacy page (`/Privacy`) with the text "Privacy"
-  - include any Credit and attributions for images tht are used and you did not create
+  - include any Credit and attributions for images that are used and you did not create
 - Create your own or find an image that you wish to use as a brand image for your menu. (If you are using the supplied bootstrap menu, change the *brand* from a text string to a thumbnail imagine 40 X 40 pixels.) If you are using an image that someone else created, make sure that you give credit to the individual on your Privacy page.
   
 ### Add `Data` folder and file
