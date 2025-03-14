@@ -36,7 +36,7 @@ Use Microsoft SQL Management Studio (use Import Data-tier Application) to restor
 
 ## 2. Client Server solution creation
 
-- Create the web application project first.
+- Create the web application project first. (turn off the HTTPS certificate checkbox)
 - Create the class library second.
 - Add 3 subfolders to this project: BLL, DAL, and Entities.
 
