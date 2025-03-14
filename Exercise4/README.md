@@ -125,7 +125,7 @@ You will need to add a project reference to the web application pointing to the 
 ### C) Overview Query Page
 
 - Create a `Query.razor` web page component.
-- Use project dependency injection for the `RailCarTypeServices` and `RollingStockServices` classes. 
+- Use property dependency injection for the `RailCarTypeServices` and `RollingStockServices` classes. 
 - Be sure to add a nav item so that this page can be navigated to using the nav menu. Use the text "Query" for the link.
 - Add an appropriate title to the page and the title browser tab.
 
